@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //과제
                 //힌트: Intent 사용하기!
+                //모드 정보 넘기기
                 Intent intent = new Intent(getApplicationContext(), AddEditActivity.class);
+                intent.putExtra("mode", 0);
                 startActivity(intent);
             }
         });
